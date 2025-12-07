@@ -24,6 +24,7 @@ which will heal the player for a full heart when picked up (consumed).
 Additions:
 -x Pot can be broken with an attack, and it can be contain a heart, it doesn't disappear after broken
 -x When pot hits something, it can break.
+-x Pot has some health, so it doesn't break right away.
 
 - Add a random boss to the dungeon.
  ]]
