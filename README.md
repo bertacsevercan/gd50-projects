@@ -58,3 +58,41 @@ A classic Pong recreation built with Lua and LÖVE2D. This lesson focuses on fun
   - Paddle speed modifiers (slow down / speed up paddles)
 
 ---
+
+## Lesson 2 — Flappy Bird
+
+A Flappy Bird clone featuring procedural pipe generation, infinite scrolling backgrounds, game states, and performance-based rewards.
+
+![flappy](https://github.com/user-attachments/assets/c04c01d6-3d92-43ec-9380-4d6893aeeec5)
+
+---
+
+### Topics Covered
+
+- Sprites  
+- Infinite Scrolling  
+- Procedural Generation  
+- State Machines
+
+---
+
+### Original Assignment
+
+- [x] Influence the generation of pipes to create more complex level patterns.  
+- [x] Award the player a medal based on performance, along with their score.  
+- [x] Implement a pause feature.
+
+---
+
+### What I Implemented
+
+- Completed all assignment requirements.
+- Added different sound effects for different medal results.
+
+---
+
+### Extra Ideas
+
+- A dynamic commentator system that reacts to your performance (e.g., praise, insults, hype commentary).
+
+---
