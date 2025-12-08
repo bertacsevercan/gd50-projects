@@ -138,3 +138,53 @@ A Breakout clone featuring procedural level layouts, multiple powerups, particle
 - Implemented level saving and added the ability to continue from the last saved level.
 
 ---
+
+# Lesson 4 — Match 3
+
+**Disclaimer**  
+All projects include base source code written by the course instructor **Colton Ogden**. I added the assignments and my own implementations on top of the original code.
+
+---
+
+## Project Overview
+
+A Match-3 puzzle game featuring animated tile movement, procedural grid generation, timed gameplay, shiny tile mechanics, variety-based scoring, and hint assistance.
+
+![match3](https://github.com/user-attachments/assets/248d9b24-f0a2-4813-9583-f73d6f1c1a82)
+
+
+---
+
+## Topics Covered
+
+- Anonymous Functions  
+- Tweening  
+- Timers  
+- Procedural Grids  
+- Sprite Art and Palettes
+
+---
+
+## Original Assignments
+
+- [x] Ensure Level 1 starts with simple flat blocks (first row of each color in the sprite sheet).  
+      Later levels should include patterned blocks (triangle, cross, etc.) worth more points.  
+- [x] Add time on match: +1 second per matched tile.  
+- [x] Add shiny tiles that destroy an entire row when matched, awarding points for every tile in the row.  
+- [x] Only allow swapping if it results in a valid match.  
+      If no possible matches remain, reset the board.
+
+---
+
+## What I Implemented
+
+- Fixed the `setColor` bug.  
+- Introduced a new **color** every 3 levels and a new **variety** every 4 levels.  
+- Added optional mouse-based matching.  
+- Added particle effects on shiny tile matches.  
+- Implemented a **hint system** when the player is stuck (up to 3 hints max).  
+- Matching now checks **both color and variety**, not just color alone.
+- Disable input when hint is active.
+
+---
+
