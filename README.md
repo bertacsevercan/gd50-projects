@@ -38,14 +38,14 @@ A classic Pong recreation built with Lua and LÖVE2D. This lesson focuses on fun
 
 ### What I Implemented
 
-- Completed the assignment as required.
-- Implemented AI for **both** players.
-- Added an **autoplay toggle**: both AIs can play against each other with no player input.
-- Added an **AI mistake chance** to mimic human inaccuracy.
-- Implemented logic for AI to **serve the ball away from the opponent**.
-- Added **full controls** for both players so two humans can play.
-- You can play against the AI on either side, and take control of an AI mid-autoplay. Autoplay shuts off only for the player you overwrite.
-- The ball changes color (to red) based on a random velocity value.
+-  [x] Completed the assignment as required.
+- [x] Implemented AI for **both** players.
+- [x] Added an **autoplay toggle**: both AIs can play against each other with no player input.
+- [x] Added an **AI mistake chance** to mimic human inaccuracy.
+- [x] Implemented logic for AI to **serve the ball away from the opponent**.
+- [x] Added **full controls** for both players so two humans can play.
+- [x] You can play against the AI on either side, and take control of an AI mid-autoplay. Autoplay shuts off only for the player you overwrite.
+- [x] The ball changes color (to red) based on a random velocity value.
 
 ---
 
@@ -86,8 +86,8 @@ A Flappy Bird clone featuring procedural pipe generation, infinite scrolling bac
 
 ### What I Implemented
 
-- Completed all assignment requirements.
-- Added different sound effects for different medal results.
+- [x] Completed all assignment requirements.
+- [x] Added different sound effects for different medal results.
 
 ---
 
@@ -97,7 +97,7 @@ A Flappy Bird clone featuring procedural pipe generation, infinite scrolling bac
 
 ---
 
-# Lesson 3 — Breakout
+## Lesson 3 — Breakout
 
 A Breakout clone featuring procedural level layouts, multiple powerups, particle effects, paddle upgrades, collision handling, and persistent save data.
 
@@ -105,7 +105,7 @@ A Breakout clone featuring procedural level layouts, multiple powerups, particle
 
 ---
 
-## Topics Covered
+### Topics Covered
 
 - Sprite Sheets  
 - Procedural Layouts  
@@ -118,7 +118,7 @@ A Breakout clone featuring procedural level layouts, multiple powerups, particle
 
 ---
 
-## Original Assignment
+### Original Assignment
 
 - [x] Add a powerup that spawns two extra balls.  
 - [x] Grow or shrink the paddle based on score increases or life loss.  
@@ -126,27 +126,20 @@ A Breakout clone featuring procedural level layouts, multiple powerups, particle
 
 ---
 
-## What I Implemented
+### What I Implemented
 
-- Fixed the `recoverPoints` bug.  
-- Implemented logic to spawn a key again if it is lost.  
-- Added seven total powerups: multiple balls, bigger ball, smaller ball, big paddle, small paddle, fast paddle, slow paddle.  
-- When multiple balls exist, the player only loses health when **all** balls are destroyed.  
-- Each brick has a random chance to contain a powerup.  
-- When a brick breaks, it drops its assigned powerup if it has one.  
-- Display on-screen text to indicate which powerup was picked up.  
-- Implemented level saving and added the ability to continue from the last saved level.
-
----
-
-# Lesson 4 — Match 3
-
-**Disclaimer**  
-All projects include base source code written by the course instructor **Colton Ogden**. I added the assignments and my own implementations on top of the original code.
+- [x] Fixed the `recoverPoints` bug.  
+- [x] Implemented logic to spawn a key again if it is lost.  
+- [x] Added seven total powerups: multiple balls, bigger ball, smaller ball, big paddle, small paddle, fast paddle, slow paddle.  
+- [x] When multiple balls exist, the player only loses health when **all** balls are destroyed.  
+- [x] Each brick has a random chance to contain a powerup.  
+- [x] When a brick breaks, it drops its assigned powerup if it has one.  
+- [x] Display on-screen text to indicate which powerup was picked up.  
+- [x] Implemented level saving and added the ability to continue from the last saved level.
 
 ---
 
-## Project Overview
+## Lesson 4 — Match 3
 
 A Match-3 puzzle game featuring animated tile movement, procedural grid generation, timed gameplay, shiny tile mechanics, variety-based scoring, and hint assistance.
 
@@ -155,7 +148,7 @@ A Match-3 puzzle game featuring animated tile movement, procedural grid generati
 
 ---
 
-## Topics Covered
+### Topics Covered
 
 - Anonymous Functions  
 - Tweening  
@@ -165,7 +158,7 @@ A Match-3 puzzle game featuring animated tile movement, procedural grid generati
 
 ---
 
-## Original Assignments
+### Original Assignments
 
 - [x] Ensure Level 1 starts with simple flat blocks (first row of each color in the sprite sheet).  
       Later levels should include patterned blocks (triangle, cross, etc.) worth more points.  
@@ -176,15 +169,75 @@ A Match-3 puzzle game featuring animated tile movement, procedural grid generati
 
 ---
 
-## What I Implemented
+### What I Implemented
 
-- Fixed the `setColor` bug.  
-- Introduced a new **color** every 3 levels and a new **variety** every 4 levels.  
-- Added optional mouse-based matching.  
-- Added particle effects on shiny tile matches.  
-- Implemented a **hint system** when the player is stuck (up to 3 hints max).  
-- Matching now checks **both color and variety**, not just color alone.
-- Disable input when hint is active.
+- [x] Fixed the `setColor` bug.  
+- [x] Introduced a new **color** every 3 levels and a new **variety** every 4 levels.  
+- [x] Added optional mouse-based matching.  
+- [x] Added particle effects on shiny tile matches.  
+- [x] Implemented a **hint system** when the player is stuck (up to 3 hints max).  
+- [x] Matching now checks **both color and variety**, not just color alone.
+- [x] Disable input when hint is active.
 
 ---
 
+## Lesson 5 — Super Mario Bros
+
+A procedurally generated 2D platformer inspired by Super Mario Bros, featuring tile-based worlds, animated entities, platformer physics, keys and locks, goal posts, powerups, enemies, camera movement, and scalable level progression.
+
+![mario](https://github.com/user-attachments/assets/19bf53d1-33a5-46e0-99f6-96b95633c9d5)
+
+
+---
+
+### Topics Covered
+
+- Tile Maps  
+- 2D Animation  
+- Procedural Level Generation  
+- Platformer Physics  
+- Basic AI  
+- Powerups
+
+---
+
+### Original Assignments
+
+- [x] Ensure the player always spawns above solid ground when entering the level.  
+- [x] In `LevelMaker.lua`, generate a random-colored key and matching lock block (from `keys_and_locks.png`).  
+      Colliding with a key should unlock the block and make it disappear.  
+      *(I generate 4 collectible keys and show collected keys on screen.)*  
+- [x] Once the lock has disappeared, trigger a goal post to spawn at the end of the level.
+   Goal posts can be found in flags.png; feel free to use whichever one you’d like! 
+   Note that the flag and the pole are separated, so you’ll have to spawn a
+   GameObject for each segment of the flag and one for the flag itself.
+   *(I spawn a gameobject as a pole and spawn an entity as the flag since its animated)*
+- [x] Touching the goal post regenerates the level, restarts the player at the beginning,  
+      increases the level length, and preserves score via parameters passed into `PlayState:enter`.  
+      *(When the player unlocks the locks the camera moves to the flag and show that its up)*
+
+---
+
+### Additions I Implemented
+
+- [x] Camera pan to the goal flag at the start of each level.  
+- [x] Player becomes invincible while the camera is moving.  
+- [x] Camera pan can be skipped with the Enter key.  
+- [x] Added randomly generated water tiles.  
+- [x] Fixed snail jitter when it has no room to move.  
+- [x] Corrected the player collision box (original was too large).  
+- [x] Added a red mushroom power-up for health restoration  
+      (max hearts = 3; extra health converts to score).  
+- [x] Added visual health bars using heart icons.  
+      The player cannot die unless all hearts are depleted.
+
+---
+
+### Extra Ideas
+
+- Climbing state for ascending the flag pole.  
+- Ladder tiles for climbing tall structures.  
+- Two new enemy types.  
+- A mushroom power-up granting temporary invincibility.
+
+---
