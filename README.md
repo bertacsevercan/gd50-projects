@@ -286,3 +286,47 @@ A top-down action adventure system inspired by classic Zelda dungeons, featuring
 - A random boss that can appear in the dungeon.
 
 ---
+
+## Lesson 7 — Angry Birds
+(unfinished)
+
+---
+## Lesson 8 — Pokémon
+
+A turn-based battle system inspired by classic Pokémon games, featuring layered state stacks, RPG stat progression, GUI elements, catching mechanics, party management, NPC interactions, and encounter logic.
+
+![pok](https://github.com/user-attachments/assets/d03bcaaf-9cc2-4d97-8af7-49d426364242)
+
+---
+
+### Topics Covered
+
+- StateStacks  
+- Turn-Based Systems  
+- GUIs  
+- RPG Mechanics
+
+---
+
+### Original Assignment
+
+- [x] Implement a Level-Up Menu that appears immediately after the “Level Up” dialogue.  
+      The menu must show, for each stat:  
+      **X + Y = Z**  
+      where X = starting stat, Y = stat increase for the level, and Z = resulting value.
+
+---
+
+### Additions I Implemented
+
+- [x] Added a state for catching Pokémon.  
+- [x] Implemented party-based battles with multiple player Pokémon.  
+- [x] Added NPC battles where the opponent also uses multiple Pokémon.  
+- [x] Added an NPC with dialogue and an interact-to-battle sequence.  
+- [x] Added a chance to fail running away, depending on the enemy’s level.  
+- [x] Added random pokéball spawns when walking in tall grass.  
+- [x] Implemented a field menu state for viewing the player’s party.
+
+---
+
+
