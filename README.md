@@ -241,3 +241,48 @@ A procedurally generated 2D platformer inspired by Super Mario Bros, featuring t
 - A mushroom power-up granting temporary invincibility.
 
 ---
+
+## Lesson 6 — Legend of Zelda
+
+A top-down action adventure system inspired by classic Zelda dungeons, featuring randomized rooms, destructible objects, throwable items, enemy drops, event-driven interactions, and smooth screen transitions.
+
+![zelda](https://github.com/user-attachments/assets/5c3c9847-4106-4ebd-8084-6d95190ceee4)
+
+
+---
+
+### Topics Covered
+
+- Top-Down Perspective  
+- Infinite Dungeon Generation  
+- Hitboxes / Hurtboxes  
+- Events  
+- Screen Scrolling  
+- Data-Driven Design
+
+---
+
+### Original Assignments
+
+- [x] Implement randomly dropping hearts from enemies, restoring one full heart when collected.  
+- [x] Add pots throughout the dungeon that the player can pick up.  
+      Picking up a pot updates the player’s animation to the “carrying” state.  
+      The player cannot swing their sword while carrying a pot.  
+- [x] Allow the player to throw carried pots.  
+      Thrown pots travel straight in the direction the player is facing and disappear when:  
+      • they hit a wall  
+      • they travel more than four tiles  
+      • they hit an enemy (dealing 1 damage)
+
+---
+
+### Additions I Implemented
+
+- [x] Pots can be broken by attacking them, and breaking a pot can drop a heart.  
+      Broken pots remain on the ground instead of disappearing.  
+- [x] Pots break on collision depending on their health; they don’t shatter instantly.
+  
+### Extra Ideas
+- A random boss that can appear in the dungeon.
+
+---
